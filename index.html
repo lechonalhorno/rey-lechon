@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rey Lechón</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- Portada con logo -->
+<header class="portada">
+    <img src="rey-lechon-logo.png.jpg" alt="El Rey Lechón" class="logo">
+</header>
+
+<!-- Menú fijo -->
+<nav>
+    <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+    </ul>
+</nav>
+
+<!-- Sección Inicio -->
+<section id="inicio" class="seccion">
+    <h1>Bienvenido a El Rey Lechón</h1>
+    <p>Disfruta del mejor lechón en un ambiente único.</p>
+    <p>Lechoncitos a la canasta y nuestro delicioso pollo al horno, <br>
+    crocantes por fuera y jugosos por dentro.</p>
+</section>
+
+<!-- Sección Menú -->
+<section id="menu" class="seccion">
+    <h2>Nuestro Menú</h2>
+    <div class="menu-galeria">
+        <img src="plato1.jpg" alt="Lechón al Horno">
+        <img src="plato2.jpg" alt="Pollo al Horno">
+        <img src="plato3.jpg" alt="Mixto">
+        <img src="plato4.jpg" alt="Jugo hervido">
+        <img src="plato5.jpg" alt="Plato especial">
+        <img src="plato6.jpg" alt="Plato familiar">
+        <img src="plato7.jpg" alt="Combo">
+        <img src="plato8.jpg" alt="Bebida especial">
+    </div>
+</section>
+
+<!-- Sección Reservas -->
+<section id="reservas" class="seccion">
+    <h2>Reserva tu plato</h2>
+    <form id="formReserva">
+        <label>Nombre:</label>
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+
+        <label>Fecha:</label>
+        <input type="date" id="fecha" required>
+
+        <label>Hora:</label>
+        <input type="time" id="hora" required>
+
+        <label>¿Qué comerá hoy?</label>
+        <select id="comida" required>
+            <option value="">-- Selecciona una opción --</option>
+            <option value="Lechón al horno">Lechón al horno</option>
+            <option value="Pollo al horno">Pollo al horno</option>
+            <option value="Mixto">Mixto</option>
+            <option value="Jugo hervido">Jugo hervido</option>
+        </select>
+
+        <label>Número de platos:</label>
+        <input type="number" id="platos" min="1" required>
+
+        <label>¿Cómo quiere su plato?</label>
+        <div class="opciones-plato">
+            <input type="radio" name="tipo" id="completo" value="Completo" checked>
+            <label for="completo">Completo</label>
+
+            <input type="radio" name="tipo" id="especificar" value="Especificar">
+            <label for="especificar">Especificar</label>
+        </div>
+
+        <textarea id="detalles" placeholder="Escribe cómo quieres tu plato" style="display:none;"></textarea>
+
+        <button type="submit">Reservar por WhatsApp</button>
+    </form>
+</section>
+
+<!-- Sección Contacto -->
+<section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <p>📍 Dirección: La Paz, Sopocachi, Plaza España, calle Quintin Barrios</p>
+    <p>📞 Teléfonos: 62479999 (Isabel Marca), 63120967 (Maguiver Antiñapa)</p>
+    <p>✉ WhatsApp: 62479999 / 63120967</p>
+</section>
+
+<!-- Sección Ubicación -->
+<section id="ubicacion" class="seccion">
+    <h2>Nos encuentras en</h2>
+    <a href="promociones.html" class="btn-extra">Ver Promociones</a>
+    <img src="mapa.jpg" alt="Ubicación El Rey Lechón" class="mapa">
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 El Rey Lechón - Todos los derechos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colores */
+:root {
+  --rojo-vino: #7b1e22;
+  --amarillo-dorado: #f5c542;
+  --negro: #000;
+  --blanco: #fff;
+}
+
+/* Fondo y texto */
+body {
+  font-family: 'Times New Roman', serif;
+  background-color: var(--negro);
+  color: var(--blanco);
+  line-height: 1.6;
+}
+
+/* Portada */
+.portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--rojo-vino);
+  height: 100vh;
+  width: 100%;
+}
+
+.logo {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Menú */
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--rojo-vino);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu a {
+  color: var(--amarillo-dorado);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.menu a:hover {
+  color: var(--blanco);
+}
+
+/* Secciones */
+.seccion {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--rojo-vino);
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 800px;
+}
+
+/* Galería */
+.menu-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.menu-galeria img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid var(--amarillo-dorado);
+}
+
+/* Imagen mapa */
+.mapa {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* Botón promociones */
+.btn-extra {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: var(--amarillo-dorado);
+  color: var(--negro);
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-extra:hover {
+  background-color: var(--blanco);
+  color: var(--rojo-vino);
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+}
+
+input, select, textarea, button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+input, select, textarea {
+  background-color: var(--blanco);
+  color: var(--negro);
+  width: 100%;
+}
+
+/* Opciones plato */
+.opciones-plato {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+textarea {
+  margin-top: 10px;
+}
+
+/* Botón */
+button {
+  background-color: var(--amarillo-dorado);
+  color: var(--negro);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--blanco);
+}
+
+/* Footer */
+footer {
+  background-color: var(--rojo-vino);
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .menu a {
+    font-size: 1.2rem;
+  }
+  .logo {
+    width: 90%;
+  }
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu a {
+    font-size: 1rem;
+  }
+  .seccion {
+    padding: 15px;
+  }
+  form {
+    padding: 5px;
+  }
+}
+
